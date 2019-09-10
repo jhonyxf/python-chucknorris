@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <img style="margin-top:50px" class="mb-4" src="https://www.programmableweb.com/sites/default/files/styles/facebook_scale_height_200/public/chucknorris_logo_coloured_small.png" alt="">
+        <h1>Você sabia?</h1>
+        <blockquote class="blockquote">
+            <p class="mb-0">"{{frase}}"</p>
+            <footer class="blockquote-footer">{{frasetraduzida}}</footer>
+        </blockquote>
+        <p class="mb-0"><a href="/" class="btn btn-primary btn-lg">Exibir outra frase</a></p>
+    {% for post in posts %}
+    <!-- <p>{{ post.author.username }} says: <b>{{ post.body }}</b></p> -->
+    {% endfor %}
+    </div>
+
+{% endblock %}

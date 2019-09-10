@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container" style="margin-top:50px">
+       <!-- Editable table -->
+<div class="card">
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Cadastre uma frase</h3>
+  <div class="card-body">
+    <form action="/formulario/" method="POST">
+  <div class="form-group">
+    <input type="text" class="form-control" name="frase" id="frase" placeholder="Digite aqui uma frase...">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Salvar</button>
+  <h5>{{resultado}}</h5>
+</form>
+  </div>
+</div>
+<!-- Editable table -->
+
+    </div>
+
+{% endblock %}
